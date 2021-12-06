@@ -20,11 +20,9 @@ public class Main{
         playDeck.newDeck();
         playDeck.shuffle();
 
-        System.out.println("Player has " + player.getNumCards() + " cards.");
-        System.out.println("Computer has " + comp.getNumCards() + " cards.");
         int handSize = 26;
+        System.out.println("Dealing");
         for (int i = 0; i < handSize; i++) {
-            System.out.println("Dealing");
             player.deck.add(playDeck.deal());
             comp.deck.add(playDeck.deal());
         }
